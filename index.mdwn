@@ -4,7 +4,7 @@ Sup is an email client written in Ruby by William Morgan.
 
 Installation
 
-* [[Debian/Ubuntu hints]]
+* [[Debian Ubuntu hints]]
 * [[MacOSX]]
 * [[Ruby1.9]]
 
@@ -18,6 +18,7 @@ Basic Configuration and Getting Started
 * [[Complete gmail configuration]]
 
 Advanced Usage
+
 * [[AddingMultipleSourcesOnTheSameServer]]
 * [[MultipleAccountsAndReply]]
 * [[Hooks]]
@@ -39,11 +40,13 @@ Advanced Usage
 * [[RemovingASource]]
 
 Troubleshooting and Known Issues
+
 * [[Troubleshooting]]
 * [[UTF-8 issues]]
 * [[CtrlY]]
 
 Sup development
+
 * [[RunningMoreThanOneSupAtATime]]
 * [[ProgrammaticallyAccessingSupsIndex]]
 * [[Contributing]]
@@ -53,22 +56,26 @@ Sup development
 * [[Heliotrope and Turnsole]]
 
 Configuring the way email leaves:
+
 * [[msmtp]]
 * [[sSMTP]]
 * [[putmail]]
 * [[nbsmtp]]
 
 Elsewhere
+
 * [Sup homepage](http://sup.rubyforge.org/)
 * [sup-talk mailinglist](http://rubyforge.org/mailman/listinfo/sup-talk)
 * IRC, #sup @ freenode.net
 
 Meta
+
 * [[EditingThisDamnWiki]]
 
 ## Future contents
 
 Configuring other ways email can leave:
+
 * Sendmail
 
 tutorial for new users how to import mails from their sources
@@ -81,8 +88,7 @@ Address Book / Contact List surfing
 (A description of the formats and possible directives of each
 config file would be super handy)
 
-"I'm nuts/interested and want to know how Sup does its
-searching/tagging thing"
+"I'm nuts/interested and want to know how Sup does its searching/tagging thing"
 
 Filtering spam
 
