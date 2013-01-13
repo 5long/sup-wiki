@@ -6,7 +6,7 @@ config.yaml file was generated.
 
 Some config options that warrant mention. A complete list can be
 found in
-[[sup.rb, circa line 265]](HTTP://gitorious.org/sup/mainline/blobs/master/lib/sup.rb#line265).(Look
+[[sup.rb, circa line 265]](http://gitorious.org/sup/mainline/blobs/master/lib/sup.rb#line265).(Look
 for "def load\_config filename")
 
      :confirm_no_attachments

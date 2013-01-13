@@ -108,7 +108,7 @@ your heart's content. Committing code is a two-stage process.
 First, you use git add to select the changes you want to commit.
 (Hint: `git add -p` in very recent Gits, will walk you through on a
 hunk-by-hunk basis, which is very nice, and you can use
-[git-wt-add](HTTP://git-wt-commit.rubyforge.org/) if your git
+[git-wt-add](http://git-wt-commit.rubyforge.org/) if your git
 doesn't have this yet). This is called staging the changes, and you
 can see what's been staged with `git diff --cached`
 
@@ -204,7 +204,7 @@ in the format as commits, so submitting your patches in this manner
 makes his life easy.
 
 There are some good tips for how to submit beautiful patches on the
-[Git project's SubmittingPatches document](HTTP://repo.or.cz/w/git.git?a=blob;f=Documentation/SubmittingPatches;hb=HEAD).
+[Git project's SubmittingPatches document](http://repo.or.cz/w/git.git?a=blob;f=Documentation/SubmittingPatches;hb=HEAD).
 In particular, if you want to add explanatory/"cover letter" text,
 you can place it after the --- but before the diffstat in the
 email.

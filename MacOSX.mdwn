@@ -2,7 +2,7 @@
 
 Ensure Ruby and
 [RubyGems](http://sup.rubyforge.org/wiki/wiki.pl?RubyGems) are
-[[upgraded]](HTTP://www.google.com/search?q=mac+os+x+upgrade+ruby+gems).
+[[upgraded]](http://www.google.com/search?q=mac+os+x+upgrade+ruby+gems).
 Then install the sup gem:
 
      sudo gem install sup
@@ -11,14 +11,14 @@ Then install the sup gem:
 
 # Sending Mail
 
-[[MacPorts]](HTTP://www.macports.org/) is an excellent software
+[[MacPorts]](http://www.macports.org/) is an excellent software
 distribution system similar to Debian's APT. You can use
 [MacPorts](http://sup.rubyforge.org/wiki/wiki.pl?MacPorts) to
 install one of the null mailers (ssmtp, msmtp) discussed in this
 wiki.
 
 Or setup your postfix similar to:
-[[1]](HTTP://linsec.ca/Using_mutt_on_OS_X#mailcap)
+[[1]](http://linsec.ca/Using_mutt_on_OS_X#mailcap)
 
 
 

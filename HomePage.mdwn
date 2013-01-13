@@ -65,8 +65,8 @@ Configuring the way email leaves:
 
 
 Elsewhere
-[[Sup homepage]](HTTP://sup.rubyforge.org/)
-[[sup-talk mailinglist]](HTTP://rubyforge.org/mailman/listinfo/sup-talk)
+[[Sup homepage]](http://sup.rubyforge.org/)
+[[sup-talk mailinglist]](http://rubyforge.org/mailman/listinfo/sup-talk)
 IRC, \#sup @ freenode.net
 
 

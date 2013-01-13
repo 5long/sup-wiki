@@ -2,7 +2,7 @@ There is a Debian package for Sup called "sup-mail". Ubuntu 9.10
 (Karmic) offers this package in the universe repository. This
 installs Sup 0.8.1; you can also install Sup 0.9 using the deb from
 the newer
-[[Lucid repository]](HTTP://packages.ubuntu.com/lucid/sup-mail).
+[Lucid repository](http://packages.ubuntu.com/lucid/sup-mail).
 For older versions of Ubuntu (or newer versions of Sup), you'll
 have to use Ruby Gems or install by hand.
 
@@ -14,7 +14,7 @@ have to use Ruby Gems or install by hand.
 
 It is best to install gems from source, rather than using aptitude.
 As explained in the
-[[Ubuntu community wiki for installing Rails]](HTTPS://help.ubuntu.com/community/RubyOnRails)
+[[Ubuntu community wiki for installing Rails]](httpS://help.ubuntu.com/community/RubyOnRails)
 - which also has gems as a prerequisite - if you do not, then
 aptitude and gems conflict horribly.
 
@@ -69,9 +69,9 @@ Simply:
 ### If you have encoding problems
 
 There's
-[[an open bug about it]](HTTP://bugs.debian.org/cgi-bin/bugreport.cgi?bug=520374)
+[[an open bug about it]](http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=520374)
 which suggests to install libncurses-ruby1.8 from
-[[this repository]](HTTP://apt.rupamsunyata.org/sup/).
+[[this repository]](http://apt.rupamsunyata.org/sup/).
 
 
 
@@ -107,7 +107,7 @@ Installing was done by:
 
 
 
-[[Using Bleeding-edge Sup on Ubuntu]](HTTP://blogs.igalia.com/aperez/2008/11/using-bleeding-edge-sup-on-ubuntu/)
+[[Using Bleeding-edge Sup on Ubuntu]](http://blogs.igalia.com/aperez/2008/11/using-bleeding-edge-sup-on-ubuntu/)
 (covers Ubuntu 8.10)
 
 
