@@ -1,5 +1,7 @@
 How to get sup to notify on new messages.
-**\~/.sup/hooks/after-poll.rb**
+
+## hooks/after-poll.rb
+
       File: ~/.sup/hooks/after-poll.rb
       Executes immediately after a poll for new messages completes.
       Variables:
@@ -11,8 +13,7 @@ How to get sup to notify on new messages.
          from_and_subj_inbox: an array of (from email address, subject) pairs for
                               only those messages appearing in the inbox
 
-Beep (Linux only) on new message (only if it's shown in the
-Inbox).
+Beep (Linux only) on new message (only if it's shown in the Inbox).
 
       if num_inbox > 0
         puts 7.chr
