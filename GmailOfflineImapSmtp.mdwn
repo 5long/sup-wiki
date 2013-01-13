@@ -162,5 +162,6 @@ words - the syncing is only one way. While there is some work in
 progress to support two-way syncing, it still currently means that
 the best way to use sup is to leave GMail's web interface from
 regular use.
+
 If you find any problems with this documentation, please email
 anirudh ATT anirudhsanjeev DOTTT org

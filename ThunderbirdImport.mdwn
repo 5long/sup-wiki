@@ -38,6 +38,7 @@ Now use mb2md to convert each mbox file into a maildir.
 
 Add the maildirs to sup, adding two tags, one for the Thunderbird
 folder and one for the name of the mail collection.
+
      `ls mdirs`.split("\n").each {|dir| `ls mdirs/#{dir}`.split("\n").each 
        {|mdir| `sup-add -ul #{dir.downcase},#{mdir.downcase} maildir:/home/dave/Mailstore/mdirs/#{dir}/#{mdir}`}}
 

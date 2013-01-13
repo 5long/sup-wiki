@@ -58,15 +58,12 @@ The solution is simple, install hoe:
 
 You're done :).
 
-
-
 ## On Debian systems
 
 Simply:
+
      sudo aptitude install sup-mail
      sup-mail
-
-
 
 ### If you have encoding problems
 
@@ -74,8 +71,6 @@ There's
 [an open bug about it](http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=520374)
 which suggests to install libncurses-ruby1.8 from
 [this repository](http://apt.rupamsunyata.org/sup/).
-
-
 
 ## Alternate Instructions
 

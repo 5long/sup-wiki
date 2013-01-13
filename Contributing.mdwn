@@ -224,8 +224,6 @@ development history, git reflog for getting yourself out of a mess
 you made with git reset or git merge, and git rebase --onto for
 serious graph editing.
 
-
-
 ## The end
 
 Good luck, and happy patching!
