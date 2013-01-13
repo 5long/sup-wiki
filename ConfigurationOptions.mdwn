@@ -3,6 +3,7 @@ Sup will generate a complete configuration file
 very first time you run it. If you've been using Sup for a while,
 you may be missing some options that have been added since your
 config.yaml file was generated.
+
 Some config options that warrant mention. A complete list can be
 found in
 [[sup.rb, circa line 265]](HTTP://gitorious.org/sup/mainline/blobs/master/lib/sup.rb#line265).(Look
@@ -32,5 +33,4 @@ These determine which fields you're asked for when composing and
 (except for subject) forwarding messages.
 
 Configuring multiple accounts to work intelligently with the Reply
-function has its own section:
-[MultipleAccountsAndReply](wiki.pl?MultipleAccountsAndReply.html)
+function has its own section: [[MultipleAccountsAndReply]]
