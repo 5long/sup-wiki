@@ -1,24 +1,19 @@
 # Ruby Gems
 
-Ensure Ruby and
-[RubyGems](http://sup.rubyforge.org/wiki/wiki.pl?RubyGems) are
-[[upgraded]](http://www.google.com/search?q=mac+os+x+upgrade+ruby+gems).
+Ensure Ruby and [[RubyGems]] are
+[upgraded](http://www.google.com/search?q=mac+os+x+upgrade+ruby+gems).
 Then install the sup gem:
 
      sudo gem install sup
 
-
-
 # Sending Mail
 
-[[MacPorts]](http://www.macports.org/) is an excellent software
+[MacPorts](http://www.macports.org/) is an excellent software
 distribution system similar to Debian's APT. You can use
-[MacPorts](http://sup.rubyforge.org/wiki/wiki.pl?MacPorts) to
-install one of the null mailers (ssmtp, msmtp) discussed in this
+[[MacPorts]] to install one of the null mailers (ssmtp, msmtp) discussed in this
 wiki.
 
-Or setup your postfix similar to:
-[[1]](http://linsec.ca/Using_mutt_on_OS_X#mailcap)
+Or [setup your postfix similar to this](http://linsec.ca/Using_mutt_on_OS_X#mailcap)
 
 
 
@@ -26,9 +21,8 @@ Or setup your postfix similar to:
 
 run sup -l and make sure your version of sup supports the
 extra-contact-addresses hook. This is only tested against 10.6
-(Snow Lepoard)
-copy and paste this into your
-\~/.sup/hooks/extra-contact-addresses.rb file:
+(Snow Lepoard) copy and paste this into your
+`~/.sup/hooks/extra-contact-addresses.rb` file:
 
       contacts=[]
      `sqlite3 -separator ':' ~/Library/Application\\ Support/AddressBook/AddressBook-v22.abcddb "select e.ZADDRESSNORMALIZED,p.ZFIRSTNAME,p.ZLASTNAME,p.ZORGANIZATION from ZABCDRECORD as p,ZABCDEMAILADDRESS as e WHERE e.ZOWNER = p.Z_PK;" | awk -F":" '{print $2" "$3" "$4 , "<"$1">"}'`.each { |c|
