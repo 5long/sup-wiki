@@ -14,11 +14,12 @@ have to use Ruby Gems or install by hand.
 
 It is best to install gems from source, rather than using aptitude.
 As explained in the
-[[Ubuntu community wiki for installing Rails]](httpS://help.ubuntu.com/community/RubyOnRails)
+[Ubuntu community wiki for installing Rails](https://help.ubuntu.com/community/RubyOnRails)
 - which also has gems as a prerequisite - if you do not, then
 aptitude and gems conflict horribly.
 
 To install gems from source:
+
      sudo aptitude install ruby-full build-essential
      # To get the latest version, see http://rubyforge.org/frs/?group_id=126
      wget http://rubyforge.org/frs/download.php/38646/rubygems-1.2.0.tgz
@@ -29,6 +30,7 @@ To install gems from source:
      sudo gem update --system
 
 Then to install sup:
+
      # We need this extra package
      sudo aptitude install libncurses5-dev libncursesw5-dev
      sudo gem install sup
@@ -69,9 +71,9 @@ Simply:
 ### If you have encoding problems
 
 There's
-[[an open bug about it]](http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=520374)
+[an open bug about it](http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=520374)
 which suggests to install libncurses-ruby1.8 from
-[[this repository]](http://apt.rupamsunyata.org/sup/).
+[this repository](http://apt.rupamsunyata.org/sup/).
 
 
 
@@ -80,13 +82,13 @@ which suggests to install libncurses-ruby1.8 from
 In order to run Sup and to build all the gems at install time, you
 will probably need the following packages installed:
 
-libcurses-ruby
-libncurses-ruby
-librmail-ruby (In Ubuntu 7.10 and 8.04 that package doesn't exists,
-use librmail-ruby1.8 instead)
-ruby
-ruby1.8-dev (in order to build the required gems)
-rubygems
+* libcurses-ruby
+* libncurses-ruby
+* librmail-ruby (In Ubuntu 7.10 and 8.04 that package doesn't exists, use librmail-ruby1.8 instead)
+* ruby
+* ruby1.8-dev (in order to build the required gems)
+* rubygems
+
 Note that if you install Sup via Ruby Gems, by default all binaries
 will be places in /var/lib/gems/1.8/bin/, and by default that is
 NOT in your path. You will have to add that to your path if you
@@ -105,9 +107,7 @@ Installing was done by:
 
 ### Alternate instructions elsewhere on the net
 
-
-
-[[Using Bleeding-edge Sup on Ubuntu]](http://blogs.igalia.com/aperez/2008/11/using-bleeding-edge-sup-on-ubuntu/)
+[Using Bleeding-edge Sup on Ubuntu](http://blogs.igalia.com/aperez/2008/11/using-bleeding-edge-sup-on-ubuntu/)
 (covers Ubuntu 8.10)
 
 
@@ -144,6 +144,7 @@ Here's what I needed to do on Ubuntu 10.10:
 
 I just tried one of the tricks already listed above for a debian
 install; worked for me:
+
      sudo apt-get install sup-mail
 
 
@@ -153,9 +154,10 @@ install; worked for me:
 I had a bit of difficulty getting non-ASCII UTF-8 characters to
 display correctly, and sup was complaining about ncursesw being
 unavailable.
+
 Because I don't need a cutting-edge ruby environment on this
 machine, I installed the Ubuntu packaged rubygems, then used that
-to \`sudo gem install ncursesw\` (IIRC I needed install
+to `sudo gem install ncursesw` (IIRC I needed install
 libncursesw5-dev as well).
 
 The final change was to manually edit /usr/bin/sup-mail and add the
