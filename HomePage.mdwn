@@ -1,0 +1,95 @@
+# Sup
+
+Sup is an email client written in Ruby by William Morgan.
+
+
+
+Installation
+[Debian/Ubuntu hints](wiki.pl?Debian%2FUbuntu_Hints.html)
+[MacOSX](wiki.pl?MacOSX.html)
+[Ruby1.9](wiki.pl?Ruby1.9.html)
+
+
+Basic Configuration and Getting Started
+[AddingSources](wiki.pl?AddingSources.html)
+[ThunderbirdImport](wiki.pl?ThunderbirdImport.html)
+[KeyboardReference](wiki.pl?KeyboardReference.html)
+[ConfigurationOptions](wiki.pl?ConfigurationOptions.html)
+[Searching your mail](wiki.pl?SearchingMail.html)
+[Complete gmail configuration](wiki.pl?GmailOfflineImapSmtp.html)
+
+
+Advanced Usage
+[AddingMultipleSourcesOnTheSameServer](wiki.pl?AddingMultipleSourcesOnTheSameServer.html)
+[MultipleAccountsAndReply](wiki.pl?MultipleAccountsAndReply.html)
+[Hooks](wiki.pl?Hooks.html)
+[TriggeringMailCollection](wiki.pl?TriggeringMailCollection.html)
+[AutoAddLabelsToNewMessages](wiki.pl?AutoAddLabelsToNewMessages.html)
+[NotificationOfNewMessages](wiki.pl?NotificationOfNewMessages.html)
+[ComposingHooks](wiki.pl?ComposingHooks.html)
+[ViewingAttachments](wiki.pl?ViewingAttachments.html)
+[CustomizingSupUI](wiki.pl?CustomizingSupUI.html)
+[CustomizingKeys](wiki.pl?CustomizingKeys.html)
+[VimIntegration](wiki.pl?VimIntegration.html)
+[EmacsIntegration](wiki.pl?EmacsIntegration.html)
+[CustomizingColors](wiki.pl?CustomizingColors.html)
+[LbdbIntegration](wiki.pl?LbdbIntegration.html)
+[Printing an email](wiki.pl?Printing.html)
+[WebBrowserIntegration](wiki.pl?WebBrowserIntegration.html)
+[GPG](wiki.pl?GPG.html)
+[FileFormats](wiki.pl?FileFormats.html)
+[RemovingASource](wiki.pl?RemovingASource.html)
+
+
+Troubleshooting and Known Issues
+[Troubleshooting](wiki.pl?Troubleshooting.html)
+[UTF-8 issues](wiki.pl?UTF8.html)
+[CtrlY](wiki.pl?CtrlY.html)
+
+
+Sup development
+[RunningMoreThanOneSupAtATime](wiki.pl?RunningMoreThanOneSupAtATime.html)
+[ProgrammaticallyAccessingSupsIndex](wiki.pl?ProgrammaticallyAccessingSupsIndex.html)
+[Contributing](wiki.pl?Contributing.html)
+[Wishlist](wiki.pl?Wishlist.html)
+[TestingXapian (Obsolete)](wiki.pl?TestingXapian.html)
+[Running from git](wiki.pl?Running_From_Git.html)
+[Heliotrope and Turnsole](wiki.pl?Heliotrope_And_Turnsole.html)
+
+
+Configuring the way email leaves:
+[msmtp](wiki.pl?Msmtp.html)
+[sSMTP](wiki.pl?Ssmtp.html)
+[putmail](wiki.pl?Putmail.html)
+[nbsmtp](wiki.pl?Nbsmtp.html)
+
+
+Elsewhere
+[[Sup homepage]](HTTP://sup.rubyforge.org/)
+[[sup-talk mailinglist]](HTTP://rubyforge.org/mailman/listinfo/sup-talk)
+IRC, \#sup @ freenode.net
+
+
+Meta
+[EditingThisDamnWiki](wiki.pl?EditingThisDamnWiki.html)
+
+
+## Future contents
+
+
+
+Configuring other ways email can leave:
+Sendmail
+
+
+tutorial for new users how to import mails from their sources
+(tagging what's outbox and what's inbox and that I already read my
+40000 mails) without having to do every single thing (selecting
+mail, hitting return and x to mark everything as read for instance)
+by hand would be really, really, really, really awesome.
+Address Book / Contact List surfing
+(A description of the formats and possible directives of each
+config file would be super handy)
+"I'm nuts/interested and want to know how Sup does its
+searching/tagging thing"
+Filtering spam
