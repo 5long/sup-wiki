@@ -1,3 +1,96 @@
-Welcome to the sup wiki!
+# Sup
 
-I'm making an edit.
+Sup is an email client written in Ruby by William Morgan.
+
+(This wiki is a replacement for the [original sup wiki](http://sup.rubyforge.org/wiki/wiki.pl) - sadly that wiki has not been maintained and has been massively vandalised. That wiki also appears to drop history after 10 revisions, so much content appears to be permanently lost.)
+
+Installation
+
+* [[Debian Ubuntu hints]]
+* [[MacOSX]]
+* [[Ruby1.9]]
+
+Basic Configuration and Getting Started
+
+* [[AddingSources]]
+* [[ThunderbirdImport]]
+* [[KeyboardReference]]
+* [[ConfigurationOptions]]
+* [[Searching your mail]]
+* [[Complete gmail configuration]]
+
+Advanced Usage
+
+* [[AddingMultipleSourcesOnTheSameServer]]
+* [[MultipleAccountsAndReply]]
+* [[Hooks]]
+* [[TriggeringMailCollection]]
+* [[AutoAddLabelsToNewMessages]]
+* [[NotificationOfNewMessages]]
+* [[ComposingHooks]]
+* [[ViewingAttachments]]
+* [[CustomizingSupUI]]
+* [[CustomizingKeys]]
+* [[VimIntegration]]
+* [[EmacsIntegration]]
+* [[CustomizingColors]]
+* [[LbdbIntegration]]
+* [[Printing an email]]
+* [[WebBrowserIntegration]]
+* [[GPG]]
+* [[FileFormats]]
+* [[RemovingASource]]
+
+Troubleshooting and Known Issues
+
+* [[Troubleshooting]]
+* [[UTF-8 issues]]
+* [[CtrlY]]
+
+Sup development
+
+* [[RunningMoreThanOneSupAtATime]]
+* [[ProgrammaticallyAccessingSupsIndex]]
+* [[Contributing]]
+* [[Wishlist]]
+* [[TestingXapian (Obsolete)]]
+* [[Running from git]]
+* [[Heliotrope and Turnsole]]
+
+Configuring the way email leaves:
+
+* [[msmtp]]
+* [[sSMTP]]
+* [[putmail]]
+* [[nbsmtp]]
+
+Elsewhere
+
+* [Sup homepage](http://sup.rubyforge.org/)
+* [sup-talk mailinglist](http://rubyforge.org/mailman/listinfo/sup-talk)
+* IRC, #sup @ freenode.net
+
+Meta
+
+* [[EditingThisDamnWiki]]
+
+## Future contents
+
+Configuring other ways email can leave:
+
+* Sendmail
+
+tutorial for new users how to import mails from their sources
+(tagging what's outbox and what's inbox and that I already read my
+40000 mails) without having to do every single thing (selecting
+mail, hitting return and x to mark everything as read for instance)
+by hand would be really, really, really, really awesome.
+
+Address Book / Contact List surfing
+(A description of the formats and possible directives of each
+config file would be super handy)
+
+"I'm nuts/interested and want to know how Sup does its searching/tagging thing"
+
+Filtering spam
+
