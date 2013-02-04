@@ -4,15 +4,15 @@ Sup is versioned with Git. This makes it very easy to contribute
 code changes and bug fixes. The typical lifecycle of a contributed
 change looks something like this:
 
-# You develop locally
-# You submit patch to mailing list
-# You endure public commentary
-# You revise and go to \#2, if necessary
-# Maintainer merges changes into 'next' branch
-# Users tracking next try out your changes and report problems
-# You submit bugfix patches and go to \#2, if necessary
-# Maintainer merges cumulative changes into 'master' branch
-# Maintainer cuts a release from master, including your changes
+1. You develop locally
+2. You submit patch to mailing list or as an issue (optionally as an pull request) at the GitHub tracker
+3. You endure public commentary
+4. You revise and go to \#2, if necessary
+5. Maintainer merges changes into 'develop' branch
+6. Users tracking next try out your changes and report problems
+7. You submit bugfix patches and go to \#2, if necessary
+8. Maintainer merges cumulative changes into 'master' branch
+9. Maintainer cuts a release from master, including your changes
 
 Git has several tools that make this workflow easy. The following
 is a brief intro on how to use Git when developing Sup. It is meant
@@ -38,7 +38,7 @@ can also be applied directly to master, in which case master is
 merged into next to propagate those changes.
 
 If you're interested in trying out the new fancy features, you will
-want to track next.
+want to track develop.
 
 If you're interested in the most stable version possible, you will
 want to track master.
@@ -50,7 +50,7 @@ against master.
 
 First, you need to clone the sup repository.
 
-      git clone git://gitorious.org/sup/mainline.git sup
+      git clone git://github.com/sup-heliotrope/sup.git
 
 This will create a "sup" directory, which contains everything you
 need to get started. (In fact, it contains a complete copy of the
@@ -58,16 +58,16 @@ entire development history!)
 
 By default you're on the master branch.
 
-## Running from the "next" branch
+## Running from the "develop" branch
 
 To get the latest and greatest features, you need to switch to the
 next branch. The Git way to do this is like so:
 
-      git branch --track next origin/next
-      git checkout next
+      git branch --track develop origin/develop
+      git checkout develop
 
 The first command creates a local branch called next, which tracks
-the remote branch, origin/next. Tracking means that we can use
+the remote branch, origin/develop. Tracking means that we can use
 commands like git pull to keep this branch up to date with the
 remote repository.
 
@@ -136,15 +136,15 @@ our code to the outside world, we'll have a chance to clean it up
 by splitting, merging, dropping commits, and editing commit
 messages.
 
-## Bugfix changes against next
+## Bugfix changes against develop
 
-If you encounter a bug in next, and want to submit a patch, then
+If you encounter a bug in develop, and want to submit a patch, then
 clearly you can't work off of master. It's fine to submit patches
-off of next. For maximum likelihood of patch acceptance, find the
+off of develop. For maximum likelihood of patch acceptance, find the
 commit that created the bug, create a branch right there with git
 branch `<branchname\> <commit id\>`, and do your bugfix commits on
 that branch. That way, the patches don't have false dependencies on
-later features of next.
+later features of develop.
 
 
 
