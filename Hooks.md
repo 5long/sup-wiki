@@ -1,17 +1,45 @@
 # Hooks
 
-The full list of hooks is:
+The full list of hooks (with links to relevant pages) is:
 
-
-
-## after-poll
-
-See [[NotificationOfNewMessages]] for an example.
+* after-poll See [[NotificationOfNewMessages]] for an example.
+* async-edit
+* attribution
+* before-add-message
+* before-edit
+* before-poll
+* bounce-command
+* crypto-mode
+* custom-search
+* detailed-headers
+* extra-contact-addresses
+* gpg-options
+* index-mode-date-widget
+* index-mode-size-widget
+* keybindings
+* label-list-filter
+* label-list-format
+* mark-as-spam
+* mentions-attachments
+* mime-decode
+* mime-view
+* publish
+* reply-from
+* reply-to
+* search-list-filter
+* search-list-format
+* sendmail
+* shutdown
+* sig-output
+* signature
+* startup
+* status-bar-text
+* terminal-title-text
+* time-to-nice-string
 
 ## help output
 
 Here is the full output of `sup --list-hooks`:
-
 
     Have 34 registered hooks:
 
