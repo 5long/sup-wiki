@@ -5,7 +5,7 @@ The full list of hooks (with links to relevant pages) is:
 * after-poll - see [[Notification Of New Messages]] for an example.
 * async-edit
 * attribution
-* before-add-message
+* before-add-message - see  [[Auto Add Labels To New Messages]]
 * before-edit
 * before-poll - see [[Triggering Mail Collection]] for an example.
 * bounce-command
