@@ -34,3 +34,10 @@ arrive.
     if subj.start_with? '[sup-talk'
       message.add_label :sup
     end
+
+## Mark as spam based on header
+
+    if message.raw_header.include? "SpamScore:.*sssss"
+      message.add_label :spam
+      log "Marking message #{message.id} as spam, subject is '#{message.subj}'"
+    end
