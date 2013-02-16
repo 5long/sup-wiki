@@ -7,39 +7,39 @@ Sup is an email client written in Ruby by William Morgan.
 Installation
 
 * [[Debian Ubuntu hints]]
-* [[MacOSX]]
-* [[Ruby1.9]]
+* [[Mac OSX]]
+* [[Ruby 1.9]]
 
 Basic Configuration and Getting Started
 
-* [[AddingSources]]
-* [[ThunderbirdImport]]
-* [[KeyboardReference]]
-* [[ConfigurationOptions]]
+* [[Adding Sources]]
+* [[Thunderbird Import]]
+* [[Keyboard Reference]]
+* [[Configuration Options]]
 * [[Searching your mail]]
 * [[Complete gmail configuration]]
 
 Advanced Usage
 
-* [[AddingMultipleSourcesOnTheSameServer]]
-* [[MultipleAccountsAndReply]]
+* [[Adding Multiple Sources On The Same Server]]
+* [[Multiple Accounts And Reply]]
 * [[Hooks]]
 * [[Triggering Mail Collection]]
-* [[AutoAddLabelsToNewMessages]]
-* [[NotificationOfNewMessages]]
-* [[ComposingHooks]]
-* [[ViewingAttachments]]
-* [[CustomizingSupUI]]
-* [[CustomizingKeys]]
-* [[VimIntegration]]
-* [[EmacsIntegration]]
-* [[CustomizingColors]]
-* [[LbdbIntegration]]
+* [[Auto Add Labels To New Messages]]
+* [[Notification Of New Messages]]
+* [[Composing Hooks]]
+* [[Viewing Attachments]]
+* [[Customizing Sup UI]]
+* [[Customizing Keys]]
+* [[Vim Integration]]
+* [[Emacs Integration]]
+* [[Customizing Colors]]
+* [[Lbdb Integration]]
 * [[Printing an email]]
-* [[WebBrowserIntegration]]
+* [[Web Browser Integration]]
 * [[GPG]]
-* [[FileFormats]]
-* [[RemovingASource]]
+* [[File Formats]]
+* [[Removing A Source]]
 
 Troubleshooting and Known Issues
 
@@ -49,11 +49,10 @@ Troubleshooting and Known Issues
 
 Sup development
 
-* [[RunningMoreThanOneSupAtATime]]
-* [[ProgrammaticallyAccessingSupsIndex]]
+* [[Running More Than One Sup At A Time]]
+* [[Programmatically Accessing Sups Index]]
 * [[Contributing]]
 * [[Wishlist]]
-* [[TestingXapian (Obsolete)]]
 * [[Running from git]]
 * [[Heliotrope and Turnsole]]
 
@@ -72,7 +71,7 @@ Elsewhere
 
 Meta
 
-* [[EditingThisDamnWiki]]
+* [[Editing This Damn Wiki]]
 
 ## Future contents
 

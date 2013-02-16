@@ -2,7 +2,7 @@
 
 The full list of hooks (with links to relevant pages) is:
 
-* after-poll - see [[NotificationOfNewMessages]] for an example.
+* after-poll - see [[Notification Of New Messages]] for an example.
 * async-edit
 * attribution
 * before-add-message
@@ -22,7 +22,7 @@ The full list of hooks (with links to relevant pages) is:
 * mark-as-spam
 * mentions-attachments
 * mime-decode
-* mime-view - see [[MacOSX]] for an example
+* mime-view - see [[Mac OSX]] for an example
 * publish
 * reply-from
 * reply-to
