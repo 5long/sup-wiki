@@ -24,7 +24,7 @@ Advanced Usage
 * [[AddingMultipleSourcesOnTheSameServer]]
 * [[MultipleAccountsAndReply]]
 * [[Hooks]]
-* [[TriggeringMailCollection]]
+* [[Triggering Mail Collection]]
 * [[AutoAddLabelsToNewMessages]]
 * [[NotificationOfNewMessages]]
 * [[ComposingHooks]]
