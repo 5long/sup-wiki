@@ -21,7 +21,7 @@ The full list of hooks (with links to relevant pages) is:
 * label-list-format
 * mark-as-spam
 * mentions-attachments
-* mime-decode
+* mime-decode - see [[Viewing Attachments]] for an example
 * mime-view - see [[Mac OSX]] for an example
 * publish
 * reply-from
