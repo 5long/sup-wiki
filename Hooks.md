@@ -2,18 +2,18 @@
 
 The full list of hooks (with links to relevant pages) is:
 
-* after-poll See [[NotificationOfNewMessages]] for an example.
+* after-poll - see [[NotificationOfNewMessages]] for an example.
 * async-edit
 * attribution
 * before-add-message
 * before-edit
-* before-poll
+* before-poll - see [[Triggering Mail Collection]] for an example.
 * bounce-command
-* crypto-mode
+* crypto-mode - see [[GPG]] for more info
 * custom-search
 * detailed-headers
 * extra-contact-addresses
-* gpg-options
+* gpg-options - see [[GPG]] for more info
 * index-mode-date-widget
 * index-mode-size-widget
 * keybindings
@@ -22,7 +22,7 @@ The full list of hooks (with links to relevant pages) is:
 * mark-as-spam
 * mentions-attachments
 * mime-decode
-* mime-view
+* mime-view - see [[MacOSX]] for an example
 * publish
 * reply-from
 * reply-to
