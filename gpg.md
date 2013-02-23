@@ -129,3 +129,34 @@ Use case is an occasionally used address for outgoing mail which is not associat
     sign_addresses = `gpg -K`.grep(/<(.*)>/){$1}
     crypto_selector.set_to :sign if not sign_addresses.select{|a| header["From"].include?(a) }.empty?
 
+## Sending encrypted mail to mailing lists
+
+When encrypting mail to a mailing list, you may want to encrypt the message using the public keys of all list members. This is what the [gnupg --group](http://www.gnupg.org/documentation/manuals/gnupg/GPG-Key-related-Options.html#GPG-Key-related-Options) option does.
+
+With sup, you can achieve the same using the ~/.sup/hooks/gpg-expand-keys.rb hook :
+
+    gpg-expand-keys
+    ---------------
+    File: ~/.sup/hooks/gpg-expand-keys.rb
+    Runs when the list of encryption recipients is created, allowing you to
+    replace a recipient with one or more GPGME recipients. For example, you could
+    replace the email address of a mailing list with the key IDs that belong to
+    the recipients of that list. This is essentially what GPG groups do, which
+    are not supported by GPGME.
+    Variables:
+        recipients: an array of recipients of the current email
+    Return value:
+        an array of recipients (email address or GPG key ID) to encrypt
+        the email for
+
+A simple hook that performs key expansion using existing gnupg groups might look like this:
+```ruby
+lookup_table = {}
+
+`gpg --with-colons --list-config group 2> /dev/null`.each_line do |line|
+  email_and_keys = line.split(':')[2..3]
+  lookup_table[email_and_keys[0].gsub(/[<>]/, '')] = email_and_keys[1].strip.split(';')
+end 
+
+recipients.map { |r| lookup_table.has_key?(r) ? lookup_table[r] : r }.flatten
+```
