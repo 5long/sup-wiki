@@ -9,7 +9,7 @@ change looks something like this:
 3. You endure public commentary
 4. You revise and go to \#2, if necessary
 5. Maintainer merges changes into 'develop' branch
-6. Users tracking next try out your changes and report problems
+6. Users tracking 'develop' try out your changes and report problems
 7. You submit bugfix patches and go to \#2, if necessary
 8. Maintainer merges cumulative changes into 'master' branch
 9. Maintainer cuts a release from master, including your changes
