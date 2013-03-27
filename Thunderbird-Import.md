@@ -29,15 +29,23 @@ directories create an empty directory for each mail collection
 Perhaps this can serve as the beginning of a script to automate the
 conversion.
 
+Ruby code (run with i.e. irb):
+
      `ls mboxes`.split("\n").each {|dir| `ls mboxes/#{dir}`.split("\n").each {|mbox| `mkdir mdirs/#{dir}/#{mbox}`}}
 
 Now use mb2md to convert each mbox file into a maildir.
+
+
+Ruby code (run with i.e. irb):
 
      `ls mboxes`.split("\n").each {|dir| `ls mboxes/#{dir}`.split("\n").each 
        {|mbox| `mb2md -s /home/dave/Mailstore/mboxes/#{dir}/#{mbox} -d /home/dave/Mailstore/mdirs/#{dir}/#{mbox}`}}
 
 Add the maildirs to sup, adding two tags, one for the Thunderbird
 folder and one for the name of the mail collection.
+
+
+Ruby code (run with i.e. irb):
 
      `ls mdirs`.split("\n").each {|dir| `ls mdirs/#{dir}`.split("\n").each 
        {|mdir| `sup-add -ul #{dir.downcase},#{mdir.downcase} maildir:/home/dave/Mailstore/mdirs/#{dir}/#{mdir}`}}
