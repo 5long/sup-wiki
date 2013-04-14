@@ -13,6 +13,7 @@ The full list of hooks (with links to relevant pages) is:
 * custom-search
 * detailed-headers
 * extra-contact-addresses
+* gpg-expand-keys - see [[GPG]] for more info
 * gpg-options - see [[GPG]] for more info
 * index-mode-date-widget
 * index-mode-size-widget
@@ -411,4 +412,3 @@ Here is the full output of `sup --list-hooks`:
     Variables:
       time: The Time instance to be formatted.
       from: The Time instance providing the reference point (considered "now").
-
