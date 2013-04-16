@@ -41,6 +41,10 @@ Advanced Usage
 * [[File Formats]]
 * [[Removing A Source]]
 
+Experimental Features
+
+* [[Maildir Syncback]]
+
 Troubleshooting and Known Issues
 
 * [[Troubleshooting]]
@@ -94,4 +98,3 @@ config file would be super handy)
 "I'm nuts/interested and want to know how Sup does its searching/tagging thing"
 
 Filtering spam
-
