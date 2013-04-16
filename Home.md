@@ -71,8 +71,7 @@ Configuring the way email leaves:
 Elsewhere
 
 * [Sup homepage](http://supmua.org/)
-* [sup-talk mailinglist](http://rubyforge.org/mailman/listinfo/sup-talk)
-* [sup-devel mailinglist](http://rubyforge.org/mailman/listinfo/sup-devel)
+* [sup-talk mailinglist](https://groups.google.com/forum/?hl=en&fromgroups#!forum/sup-talk)
 * IRC, #sup @ freenode.net
 
 Meta
