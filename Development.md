@@ -20,7 +20,7 @@ The roadmap to the next sup goes like this:
 * Migrate to Psych (issue #17)
   * Requires a configuration file migration
 * Remove all deprecated and abandoned dependencies and components:
-  * Iconv (issue #23)
+  * Iconv (issue #23) ([[Development:-UTF-8]])
   * Switch to Mail from RMail
   * Drop the bad ncursesw gem
 * Implement IMAP syncback support ([[Development:-Maildir-SyncBack]])
