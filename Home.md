@@ -68,6 +68,10 @@ Configuring the way email leaves:
 * [[putmail]]
 * [[nbsmtp]]
 
+Configuring the way email is retrieved:
+
+* [[OfflineIMAP]]
+
 Elsewhere
 
 * [Sup homepage](http://supmua.org/)
