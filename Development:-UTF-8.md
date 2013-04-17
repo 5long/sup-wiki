@@ -8,6 +8,8 @@ All ruby scripts should by default be UTF-8 (start script with, or second line):
 # encoding: UTF-8
 ```
 
+this is the default in Ruby 2.0.0.
+
 ## Encoding of files
 All files: labels.txt, contacts.txt, etc should be written and loaded in UTF-8 (set external encoding to UTF-8).
 
