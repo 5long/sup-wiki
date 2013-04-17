@@ -1,0 +1,1 @@
+This wiki is a replacement for the [original sup wiki](http://sup.rubyforge.org/wiki/wiki.pl) - sadly that wiki has not been maintained and has been massively vandalised. That wiki also appears to drop history after 10 revisions, so much content appears to be permanently lost.
