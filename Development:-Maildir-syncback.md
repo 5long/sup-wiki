@@ -1,6 +1,6 @@
 # Development of Maildir Syncback
 
-Usage instructions: [[Maildir-Syncback]]
+Usage instructions: [[Maildir-Syncback]], development is going on in the [maildir-sync](https://github.com/sup-heliotrope/sup/tree/maildir-sync) branch.
 
 ## Syncing labels
 Resources:
