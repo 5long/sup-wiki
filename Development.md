@@ -1,6 +1,7 @@
 # Development
 
 * [[Development:-Maildir-SyncBack]]
+* [[Development:-UTF-8]]
 
 ## Useful pages
 * [[Running More Than One Sup At A Time]]
@@ -24,7 +25,7 @@ The roadmap to the next sup goes like this:
   * Drop the bad ncursesw gem
 * Implement IMAP syncback support ([[Development:-Maildir-SyncBack]])
 * Update to version 2 of the gpgme gem
-* Get UTF-8 encoding right
+* Get UTF-8 encoding right ([[Development:-UTF-8]])
 * Get some response from the owners or get some control on the official infrastructure (we don't want to fork away, but rather continue the project) (comments?)
   * Mailing lists
   * Gem
