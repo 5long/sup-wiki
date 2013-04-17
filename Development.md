@@ -22,7 +22,7 @@ The roadmap to the next sup goes like this:
   * Iconv (issue #23)
   * Switch to Mail from RMail
   * Drop the bad ncursesw gem
-* Implement IMAP syncback support
+* Implement IMAP syncback support ([[Development:-Maildir-SyncBack]])
 * Update to version 2 of the gpgme gem
 * Get UTF-8 encoding right
 * Get some response from the owners or get some control on the official infrastructure (we don't want to fork away, but rather continue the project) (comments?)
