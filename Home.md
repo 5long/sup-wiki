@@ -79,7 +79,7 @@ Sup is an email client written in Ruby originally by William Morgan.
 
 ## Meta
 
-* [[OriginalWiki]]
+* The original Sup wiki was lost, more infomation: [[OriginalWiki]]
 * [[Editing This Damn Wiki]]
 
 ## Future contents
