@@ -5,6 +5,7 @@
 
 ## Useful pages
 * [[Running More Than One Sup At A Time]]
+* [[Using RVM for different ruby environments]]
 * [[Programmatically Accessing Sups Index]]
 * [[Contributing]]
 * [[Wishlist]]
