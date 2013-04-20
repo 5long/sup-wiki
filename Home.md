@@ -64,8 +64,6 @@ Sup is an email client written in Ruby originally by William Morgan.
 ## Sup development
 
 * [[Development]]
-* [[Running More Than One Sup At A Time]]
-* [[Programmatically Accessing Sups Index]]
 * [[Contributing]]
 * [[Wishlist]]
 * [[Running from git]]
