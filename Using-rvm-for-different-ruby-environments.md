@@ -22,7 +22,7 @@ cd sup
 ruby -Ilib bin/sup
 ```
 
-or just do ```rvm 1.9.3 gem install pkg/sup-999.gem``` to get dependencies automatically.
+or just do ```rvm 1.9.3 do gem install pkg/sup-999.gem``` to get dependencies automatically.
 
 add ~/.rvm/bin to your PATH for easy access.
 
