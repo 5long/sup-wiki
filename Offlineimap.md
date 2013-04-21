@@ -33,6 +33,8 @@ nametrans: lambda s: dict((value,key) for key,value in
 
 ```
 
+Note that for some users, the gmail folders are like `[Google Mail]/All Mail` rather than `[Gmail]/All Mail`
+
 This example uses the 'utf7.py' script described in the section below. It might be possible to extract the folder translation so that is not necessary to write it two times.
 
 ### UTF-8 issues
