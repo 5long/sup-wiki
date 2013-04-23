@@ -15,7 +15,7 @@ Maintainers and developers who require more than just commit access and hold mai
 Contributors and developers who have shown a larger interest and have several accepted patches.
 
 ## Contributors
-Sporadically active developers and other contributors (documentation, testing, etc.) who do not need commit access or have been active over a long time with sound patches. We wish to allow most people who have contributed in some way to Sup here and wish to be a member.
+Sporadically active developers and other contributors (documentation, testing, etc.) who do not need commit access. We want to allow most people who have contributed in some way to Sup here and who wishes to be a member.
 
 Earlier contributions will be taken in to account.
 
