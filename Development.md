@@ -33,3 +33,11 @@ The roadmap to the next sup goes like this:
   * Mailing lists
   * Gem
   * Original web page?
+
+## Roles and tasks
+This list shows who is the main responsible for each task, the responsibility may be shared and several will be contributing:
+- Getting a release of sup-0.13 (for ruby 1.8 and ruby 1.9): 
+- Managing the 'maildir-sync' branch:
+- Home page:
+- Setting up a consistent infrastructure:
+- Managing the 'sup-two' branch:
