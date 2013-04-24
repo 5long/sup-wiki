@@ -22,17 +22,17 @@ definitely need to learn more about Git than is presented here.
 
 ## Branches
 
-In the git world, branches are ubiquitous. They come it two
+In the git world, branches are ubiquitous. They come in two
 flavors: remote branches, which you can pull changes from (or push
 to), and local branches, which you can edit. To use a remote
 branch, you have to make a local branch that mirrors it.
 
 From this lifecycle above, you can see that the Sup repository has
-two remote branches: master and next. Master is as stable as
-possible. Next is where the latest and greatest features go. Users
+two remote branches: master and develop. Master is as stable as
+possible. develop is where the latest and greatest features go. Users
 are encouraged to track both.
 
-Once changes mature, they're pulled from next to master, and
+Once changes mature, they're pulled from develop to master, and
 releases are cut from master. Simple and obvious bug-fix patches
 can also be applied directly to master, in which case master is
 merged into next to propagate those changes.
@@ -61,12 +61,12 @@ By default you're on the master branch.
 ## Running from the "develop" branch
 
 To get the latest and greatest features, you need to switch to the
-next branch. The Git way to do this is like so:
+develop branch. The Git way to do this is like so:
 
       git branch --track develop origin/develop
       git checkout develop
 
-The first command creates a local branch called next, which tracks
+The first command creates a local branch called develop, which tracks
 the remote branch, origin/develop. Tracking means that we can use
 commands like git pull to keep this branch up to date with the
 remote repository.
