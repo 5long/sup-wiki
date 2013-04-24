@@ -4,15 +4,21 @@ Sup is versioned with Git. This makes it very easy to contribute
 code changes and bug fixes. The typical lifecycle of a contributed
 change looks something like this:
 
-1. You develop locally
-2. You submit patch to mailing list or as an issue (optionally as an pull request) at the GitHub tracker
-3. You endure public commentary
-4. You revise and go to \#2, if necessary
-5. Maintainer merges changes into 'develop' branch
-6. Users tracking 'develop' try out your changes and report problems
-7. You submit bugfix patches and go to \#2, if necessary
-8. Maintainer merges cumulative changes into 'master' branch
-9. Maintainer cuts a release from master, including your changes
+1. You fork the repository on github
+2. You clone your fork
+3. You develop locally on a feature branch
+4. You push your feature branch to your fork on github
+5. You start a pull request from your feature branch to the develop branch on the upstream repo
+6. You endure public commentary
+7. You revise and go to \#5, if necessary
+8. A maintainer merges the pull request into the develop branch
+9. Users tracking 'develop' try out your changes and report problems
+10. You submit bugfix patches and go to \#5, if necessary
+
+Then every now and then:
+
+1. Maintainer merges cumulative changes into 'master' branch
+2. Maintainer cuts a release from master, including your changes
 
 Git has several tools that make this workflow easy. The following
 is a brief intro on how to use Git when developing Sup. It is meant
@@ -48,9 +54,13 @@ against master.
 
 ## Setting up
 
-First, you need to clone the sup repository.
+First you need to fork the sup repository.  Log in to https://github.com
+and go to https://github.com/sup-heliotrope/sup.git and click on the
+"Fork" button.
 
-      git clone git://github.com/sup-heliotrope/sup.git
+Now, you need to clone your fork of the sup repository.
+
+      git clone https://github.com/<username>/sup.git
 
 This will create a "sup" directory, which contains everything you
 need to get started. (In fact, it contains a complete copy of the
@@ -76,10 +86,15 @@ back to the master branch with a git checkout master at any point.
 
 ## Keeping up to date
 
+In order to pull in the latest changes from upstream you will need to
+set up a git remote that points to the upstream repo:
+
+    git remote add upstream git://github.com/sup-heliotrope/sup.git
+
 At any point, you can receive the most recent version of the
 current branch with a git pull:
 
-      git pull
+    git pull upstream
 
 If you've made uncommitted changes locally directly on this branch,
 this command will probably fail. If you've made changes locally
@@ -102,6 +117,11 @@ started developing a feature:
      git checkout <topic name> # switch to the new branch
 
 These commands can be combined into one: `git checkout -b <topic name\> master`
+
+To do the first push to your fork, and to set up your local copy to
+track the branch on your fork, do:
+
+    git push -u origin <topic name>
 
 Now you're on the topic branch, and you can tweak and commit to
 your heart's content. Committing code is a two-stage process.
@@ -138,15 +158,13 @@ messages.
 
 ## Bugfix changes against develop
 
-If you encounter a bug in develop, and want to submit a patch, then
-clearly you can't work off of master. It's fine to submit patches
+If you encounter a bug in develop, and want to submit a pull request, then
+clearly you can't work off of master. It's fine to submit pull requests
 off of develop. For maximum likelihood of patch acceptance, find the
 commit that created the bug, create a branch right there with git
 branch `<branchname\> <commit id\>`, and do your bugfix commits on
 that branch. That way, the patches don't have false dependencies on
 later features of develop.
-
-
 
 ## Keeping up to date while developing
 
@@ -160,7 +178,7 @@ This keeps your development history clean and simple.
 To rebase your topic branch:
 
      git checkout master       # switch to master
-     git pull                  # sync master branch with remote repository
+     git pull upstream master  # sync master branch with remote repository
      git checkout <topic name> # switch back
      git rebase master         # move entire branch up
 
@@ -182,39 +200,25 @@ typical usage will be something like:
 
      git rebase --interactive master # edit all commits since branching from master
 
-## Submitting patches for review
+## Submitting pull requests for review
 
-Once you've committed some code, it's time to submit it to the
-mailing list for review. You can use git-format-patch to create one
-email per commit, which you can then send with Sup, or, if you're
-feeling courageous, you can use git-send-email to create the
-patches and send them in one fell swoop.
+We prefer to get contributions via pull requests on github.  To do this
+you'll need to push your topic branch to your fork:
 
-Typical usage will be something like:
+    git checkout <topic name>
+    git push
 
-      git-format-patch master # make patch files for all commits since branching from master
-
-If you've structured your commit messages as above, the summary
-will be used as the subject (after a "[PATCH]" marker), and the
-descriptive version and the diff itself will appear in the body of
-the message.
-
-On the maintainer's end, there are some nice tools to import emails
-in the format as commits, so submitting your patches in this manner
-makes his life easy.
+Then you can login to github and go to your fork page at
+https://github.com/<username>/sup and github will notice that you
+recently pushed a branch and offer to start a pull request.  Click on
+that button, enter any text you need to explain what your pull request
+is about and click the Submit button.
 
 There are some good tips for how to submit beautiful patches on the
 [Git project's SubmittingPatches document](http://repo.or.cz/w/git.git?a=blob;f=Documentation/SubmittingPatches;hb=HEAD).
 In particular, if you want to add explanatory/"cover letter" text,
 you can place it after the --- but before the diffstat in the
 email.
-
-(They require the Signed-off-by: field to indicate some legal
-stuff. Sup hasn't become quite so bureaucratic yet, so I will
-merely assume that, by submitting patches, you are aware that I may
-very well use and distribute them in Sup according to the Sup
-license.)
-
 
 
 ## Other useful commands
