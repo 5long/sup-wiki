@@ -209,7 +209,7 @@ you'll need to push your topic branch to your fork:
     git push
 
 Then you can login to github and go to your fork page at
-https://github.com/<username>/sup and github will notice that you
+`https://github.com/<username>/sup` and github will notice that you
 recently pushed a branch and offer to start a pull request.  Click on
 that button, enter any text you need to explain what your pull request
 is about and click the Submit button.
