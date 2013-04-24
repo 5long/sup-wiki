@@ -33,7 +33,8 @@
 * Get UTF-8 encoding right ([[Development:-UTF-8]])
 
 ## Roles and tasks
-This list shows who is the main responsible for each task, the responsibility may be shared and several will be contributing:
+This list shows who is the main person responsible for each task. The responsibility may be shared and we hope several people will contribute to each:
+
 - Getting a release of sup-0.13 (for ruby 1.8 and ruby 1.9): 
 - Managing the 'maildir-sync' branch:
 - Home page:
