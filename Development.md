@@ -35,8 +35,8 @@
 ## Roles and tasks
 This list shows who is the main person responsible for each task. The responsibility may be shared and we hope several people will contribute to each:
 
-- Getting a release of sup-0.13 (for ruby 1.8 and ruby 1.9): 
+- Getting a release of sup-0.13 (for ruby 1.8 and ruby 1.9): maintainers
 - Managing the 'maildir-sync' branch:
 - Home page:
-- Setting up a consistent infrastructure:
-- Managing the 'sup-two' branch:
+- Setting up a consistent infrastructure: maintainers
+- Managing the 'sup-two' branch: maintainers
