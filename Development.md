@@ -21,7 +21,7 @@
 ## Roadmap
 
 ## Sup-0.13
-* Release sup-0.13 very soon: will _not_ include maildir support or work on Ruby 2.
+* Release sup-0.13 very soon: will _not_ include maildir-syncback support or work on Ruby 2.
 
 ## Sup-0.14
 * Support Ruby 2.0.0 (milestone 2), 1.9 and 1.8
