@@ -72,7 +72,9 @@ Sup is an email client written in Ruby originally by William Morgan.
 ### Elsewhere
 
 * [Sup homepage](http://supmua.org/)
-* [sup-talk mailinglist](https://groups.google.com/forum/?hl=en&fromgroups#!forum/sup-talk)
+* [sup-talk mailinglist](https://groups.google.com/forum/?hl=en&fromgroups#!forum/sup-talk) General sup talk
+* [sup-announce mailinglist](http://rubyforge.org/pipermail/sup-announce/) One email per release
+* [sup-devel mailinglist](http://rubyforge.org/pipermail/sup-devel/) Development specific talk
 * IRC, #sup @ freenode.net
 
 ## Meta
