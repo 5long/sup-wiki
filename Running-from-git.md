@@ -13,4 +13,4 @@ $ git checkout -b develop origin/develop
 $ ruby -I lib bin/sup
 ```
 
-For more information on how to work with git checkout for instance: http://gitref.org/ or http://git-scm.com/book.
+For more information on how to work with git see for instance: http://gitref.org/ or http://git-scm.com/book.
