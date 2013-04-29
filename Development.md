@@ -14,6 +14,10 @@
 * [[Running from git]]
 * [[Heliotrope and Turnsole]]
 
+## Mailing list
+* [sup-devel mailinglist](http://rubyforge.org/pipermail/sup-devel/) Development specific talk
+* Also subscribe to sup-talk
+
 ## Roadmap
 
 ## Sup-0.13
