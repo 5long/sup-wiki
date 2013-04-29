@@ -4,6 +4,7 @@ At the moment the main maintainers are:
 - Gaute Hope (@gauteh)
 - Hamish Downer (@foobacca)
 - Matthieu Rakotojaona (@rakoo)
+- Jonathan Lassoff (@jof)
 
 # Team
 There will be three different teams: Owners, Committers and Contributors.
