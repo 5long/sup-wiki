@@ -5,7 +5,7 @@ This page describes how to install sup 0.13.x on recent versions of Ubuntu.
 * Install system packages
 
 ```bash
-sudo apt-get install build-essential libncursesw5-dev libncurses5-dev uuid-dev
+sudo apt-get install build-essential libncursesw5-dev libncurses5-dev uuid-dev zlib1g-dev
 ```
 
 * Install Ruby and Rubygem
