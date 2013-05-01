@@ -15,9 +15,9 @@ sudo apt-get install build-essential libncursesw5-dev libncurses5-dev uuid-dev z
     But currently running sup on 1.8.7 is supported as well.
     In this case you'll need to install Ruby by executing `sudo apt-get install ruby1.8-full`
 
-Or:
+    Or:
 
-  - Use [rvm] or [rbenv] to install Ruby. Note that sup 0.13.x doesn't run on Ruby 2.0.
+  - Use [rvm] or [rbenv]. Note that sup 0.13.x doesn't run on Ruby 2.0.
 
 * Install sup via rubygem
 
