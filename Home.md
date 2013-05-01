@@ -1,17 +1,25 @@
 # Sup
 
-Sup is an email client written in Ruby originally by William Morgan.
+Sup is an email client written in Ruby, originally by William Morgan, but now maintained and developed by the Sup community.
 
 ## Installation
 
+Normally installing sup can be a matter of:
+```
+gem install sup
+```
+
+to install sup. If that does not work, please check with your linux distribution on how to install ruby and rubygems, or see below for platform specific instructions. If you want to run the latest development or install from git please read [[Running from git]].
+
+### Platform specific instructions
+
 * [[Debian Ubuntu hints]]
 * [[Mac OSX]]
-* [[Ruby 1.9]]
+* [[Windows]]
 
 ## Basic Configuration and Getting Started
 
 * [[Adding Sources]]
-* [[Thunderbird Import]]
 * [[Keyboard Reference]]
 * [[Configuration Options]]
 * [[Searching your mail]]
@@ -23,7 +31,7 @@ Sup is an email client written in Ruby originally by William Morgan.
 * [[sSMTP]]
 * [[putmail]]
 * [[nbsmtp]]
-* Sendmail
+* [[Sendmail]]
 
 ## Configuring the way email is retrieved
 
@@ -50,6 +58,7 @@ Sup is an email client written in Ruby originally by William Morgan.
 * [[GPG]]
 * [[File Formats]]
 * [[Removing A Source]]
+* [[Thunderbird Import]]
 
 ## Experimental Features
 
@@ -57,7 +66,6 @@ Sup is an email client written in Ruby originally by William Morgan.
 
 ## Troubleshooting and Known Issues
 
-* [[Troubleshooting]]
 * [[UTF-8 issues]]
 * [[CtrlY]]
 
@@ -82,7 +90,7 @@ Sup is an email client written in Ruby originally by William Morgan.
 * The original Sup wiki was lost, more infomation: [[OriginalWiki]]
 * [[Editing This Damn Wiki]]
 
-## Future contents
+## Future content
 
 ### Importing mail from sources
 Tutorial for new users how to import mails from their sources
