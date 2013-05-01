@@ -1,6 +1,6 @@
 This page describes how to install sup 0.13.x on recent versions of Ubuntu.
 
-### 12.04
+The following steps are tested on Ubuntu 13.04 and should probably work on 12.04 / 12.10, too.
 
 * Install system packages
 
@@ -15,7 +15,7 @@ sudo apt-get install build-essential libncursesw5-dev libncurses5-dev uuid-dev z
     But currently running sup on 1.8.7 is supported as well.
     In this case you'll need to install Ruby by executing `sudo apt-get install ruby1.8-full`
 
-  - Use [rvm] or [rbenv].
+  - Use [rvm] or [rbenv]. Note that sup 0.13.x doesn't run on Ruby 2.0.
 
 * Install sup via rubygem
 
