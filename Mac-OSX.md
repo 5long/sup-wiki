@@ -66,11 +66,3 @@ set your \~/.sup/hooks/mime-view.rb file to:
 
      `open '#{filename}'`
 
-
-
-
-
-# patches
-
-This patch is to open attachments:
-[http://rubyforge.org/pipermail/sup-talk/2009-October/003407.html](http://rubyforge.org/pipermail/sup-talk/2009-October/003407.html)
