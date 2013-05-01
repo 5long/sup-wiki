@@ -24,7 +24,7 @@
 * Release sup-0.13 very soon: will _not_ include maildir-syncback support or work on Ruby 2.
 
 ## Sup-0.14
-* Support Ruby 2.0.0 (milestone 2), 1.9 and 1.8
+* Support Ruby 2.0.0 (milestone 2) and 1.9
 * Re-brand to the Sup developers and this infrastructure (issue #20)
 * Migrate to Psych (issue #17)
   * Requires a configuration file migration
