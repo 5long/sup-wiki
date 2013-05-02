@@ -3,7 +3,7 @@
 * [[Development:-Administration-and-Team]]
 * [[Development:-Maildir-SyncBack]]
 * [[Development:-UTF-8]]
-* [[Releasing a new sup]]
+* [[Development:-Releasing-a-new-sup]]
 
 ## Useful pages
 * [[Running More Than One Sup At A Time]]
