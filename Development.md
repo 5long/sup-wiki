@@ -1,7 +1,6 @@
 # Development
 
 * [[Development:-Administration-and-Team]]
-
 * [[Development:-Maildir-SyncBack]]
 * [[Development:-UTF-8]]
 * [[Releasing a new sup]]
