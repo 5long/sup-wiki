@@ -4,7 +4,7 @@ Sup is an email client written in Ruby, originally by William Morgan, but now ma
 
 ## Installation
 
-Normally installing sup can be a matter of:
+Normally installing sup is as easy as:
 ```
 gem install sup
 ```
