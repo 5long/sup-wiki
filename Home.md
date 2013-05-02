@@ -9,7 +9,7 @@ Normally installing sup is as easy as:
 gem install sup
 ```
 
-to install sup. If that does not work, please check with your linux distribution on how to install ruby and rubygems, or see below for platform specific instructions. If you want to run the latest development or install from git please read [[Running from git]].
+If that does not work, please check with your Linux distribution on how to install ruby and rubygems, or see below for platform specific instructions if you are not yet running Linux. If you want to run the latest development or install from git please read [[Running from git]].
 
 ### Platform specific instructions
 
