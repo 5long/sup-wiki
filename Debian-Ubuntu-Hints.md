@@ -1,3 +1,11 @@
+## Caution: Content Not Actively Maintained
+
+This page is migrated from the [old sup wiki](http://supmua.org/history/).
+Much of this page is probably outdated and not applicable to sup since
+v0.13.
+
+## Native Package
+
 There is a Debian package for Sup called "sup-mail". Ubuntu 9.10
 (Karmic) offers this package in the universe repository. This
 installs Sup 0.8.1; you can also install Sup 0.9 using the deb from

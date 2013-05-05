@@ -13,7 +13,7 @@ If that does not work, please check with your Linux distribution on how to insta
 
 ### Platform specific instructions
 
-* [[Debian Ubuntu hints]]
+* [[Debian / Ubuntu|Installation:-Debian-and-Ubuntu]]
 * [[Mac OSX]]
 * [[Windows]]
 
