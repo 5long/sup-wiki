@@ -3,7 +3,7 @@
 ## Installation
 
 ```bash
-curl -L https://get.rvm.io | bash -s stable --ruby=1.9.3
+curl -L https://get.rvm.io | bash -s stable --autolibs=enabled --ruby=1.9.3
 ```
 
 ## Creating gemset and alias for easy development
