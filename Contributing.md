@@ -55,7 +55,7 @@ against master.
 ## Setting up
 
 First you need to fork the sup repository.  Log in to https://github.com
-and go to https://github.com/sup-heliotrope/sup.git and click on the
+and go to https://github.com/sup-heliotrope/sup and click on the
 "Fork" button.
 
 Now, you need to clone your fork of the sup repository.
