@@ -4,6 +4,9 @@
 
 ```bash
 curl -L https://get.rvm.io | bash -s stable --autolibs=enabled --ruby=1.9.3
+# Follow whatever instructions rvm prints later.
+# For a normal user it could probably be this:
+source ~/.rvm/scripts/rvm
 ```
 
 ## Creating gemset and alias for easy development
