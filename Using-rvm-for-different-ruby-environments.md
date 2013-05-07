@@ -10,13 +10,13 @@ rvm install 1.9.3
 rvm 1.9.3
 rvm gemset create sup-develop
 rvm gemset use sup-develop
-gem install ncursesw
+gem install ncursesw-sup
 gem install trollop
 gem install gettext
 gem install rmail
 gem install lockfile
 gem install mime-types
-gem install xapian-ruby
+gem install xapian-full-alaveteli
 git clone git://github.com/sup-heliotrope/sup.git
 cd sup
 ruby -Ilib bin/sup
