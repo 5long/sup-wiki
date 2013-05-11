@@ -3,13 +3,13 @@ and Debian.
 
 You might want to prepend commands with sudo where root access is needed.
 
-* Install system packages
+## Install system packages
 
 ```bash
 apt-get install build-essential libncursesw5-dev libncurses5-dev uuid-dev zlib1g-dev
 ```
 
-* Install Ruby, Rubygems, and Rake
+## Install Ruby, Rubygems, and Rake
 
   - Install system Ruby: run `apt-get install ruby1.9.1-full`.
 
@@ -28,7 +28,7 @@ apt-get install build-essential libncursesw5-dev libncurses5-dev uuid-dev zlib1g
 
   - Install Ruby via [rvm] or [rbenv]. Note that sup 0.13.x doesn't run on Ruby 2.0.
 
-* `rake1.8` issue
+## `rake1.8` issue
 
 If you're using system Ruby of 1.8,
 You have to do this before going for the next step:
@@ -37,7 +37,7 @@ You have to do this before going for the next step:
 ln -s /usr/bin/rake /usr/local/bin/rake1.8
 ```
 
-* Install sup via rubygems
+## Install sup via rubygems
 
 ```bash
 gem install sup # sudo is not needed if not using system ruby
@@ -45,9 +45,7 @@ gem install sup # sudo is not needed if not using system ruby
 gem1.9.1 install sup
 ```
 
-If all goes well, you should be able to run `sup-config` to get started.
-
-* Rubygems `PATH` issue on old systems
+## Rubygems `PATH` issue on old systems
 
 On Debian 6.0 and lower (and other old Ubuntu systems),
 You'll have to manually add `/var/lib/gems/1.9.1/bin` to `PATH`
