@@ -17,7 +17,7 @@ Or you can refer to the [[general installation process|Installation:-General-Pro
 * [[Debian / Ubuntu|Installation:-Debian-and-Ubuntu]]
 * [[Archlinux|Installation:-Archlinux]]
 * [[Mac OSX]]
-* [[Windows]]
+* Windows: Not supported.
 
 ## Basic Configuration and Getting Started
 
