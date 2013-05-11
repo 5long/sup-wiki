@@ -6,12 +6,13 @@
 * [[Development:-Releasing-a-new-sup]]
 
 ## Useful pages
+
+* [[Running from git]]
 * [[Running More Than One Sup At A Time]]
 * [[Using RVM for different ruby environments]]
 * [[Programmatically Accessing Sups Index]]
 * [[Contributing]]
 * [[Wishlist]]
-* [[Running from git]]
 * [[Heliotrope and Turnsole]]
 
 ## Mailing list

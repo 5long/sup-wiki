@@ -45,7 +45,8 @@ package manager if you're stuck with Ruby 1.8.
 Now you can just install sup via `gem i sup` and rubygems can install all
 dependencies in Ruby automatically.
 
-If you're running sup from source, see [[Running from git]] for how to
+If you're running sup from source, see
+[[Running from git#Install-dependencies-in-Ruby]] for how to
 install dependencies via [bundler].
 
 [rvm]: https://rvm.io/
