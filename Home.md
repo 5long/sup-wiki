@@ -21,6 +21,7 @@ Or you can refer to the [[general installation process|Installation:-General-Pro
 
 ## Basic Configuration and Getting Started
 
+* [[New User Guide]]
 * [[Adding Sources]]
 * [[Keyboard Reference]]
 * [[Configuration Options]]

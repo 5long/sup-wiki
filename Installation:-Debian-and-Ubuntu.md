@@ -54,6 +54,10 @@ You'll have to manually add `/var/lib/gems/1.9.1/bin` to `PATH`
 environment variable. Or you'll get an `command not found` error when
 running `sup`.
 
+## Next step
+
+See [[New User Guide]].
+
 ## On even older versions of Debian / Ubuntu
 
 [[See this page|Debian-Ubuntu-Hints]] if you're on a really old system

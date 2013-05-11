@@ -49,6 +49,10 @@ If you're running sup from source, see
 [[Running from git#Install-dependencies-in-Ruby]] for how to
 install dependencies via [bundler].
 
+## Next step
+
+See [[New User Guide]].
+
 [rvm]: https://rvm.io/
 [rbenv]: https://github.com/sstephenson/rbenv
 [extenions]: http://www.ruby-doc.org/docs/ProgrammingRuby/html/ext_ruby.html

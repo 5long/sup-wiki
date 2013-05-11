@@ -26,6 +26,10 @@ This should be easy:
 gem i sup
 ```
 
+## Next step
+
+See [[New User Guide]].
+
 [base-devel]: https://www.archlinux.org/groups/x86_64/base-devel/
 [rvm]: https://rvm.io/
 [rbenv]: http://github.com/sstephenson/rbenv
