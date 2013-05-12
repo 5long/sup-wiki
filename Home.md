@@ -15,6 +15,7 @@ Or you can refer to the [[general installation process|Installation:-General-Pro
 ### Platform specific instructions
 
 * [[Debian / Ubuntu|Installation:-Debian-and-Ubuntu]]
+* [[Fedora|Installation: Fedora]]
 * [[Archlinux|Installation:-Archlinux]]
 * [[Mac OSX]]
 * Windows: Not supported.
