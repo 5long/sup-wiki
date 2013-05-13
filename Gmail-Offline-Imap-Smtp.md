@@ -1,22 +1,12 @@
 Getting the sup mail client to work with GMail(Imap+Smtp)/Google
 Apps with local mirroring
 
-
 # Setup overview:
-
-While sup has out-of-the-box support for reading email from imap,
-there isn't support for fetching all of your email and storing it
-locally. To top it off, the IMAP support is rather slow and there
-doesn't seem to be any SMTP support yet. Please note that this
-supports Gmail and Google Apps Domain Gmail. I haven't tested much
-of the former though.
 
 We'll be using Offlineimap - a tool to mirror IMAP mail in many
 formats - to store our email in the Maildir format. We'll then set
 up msmtp - a package to send email through smtp - to use GMail's
 system to send messages.
-
-
 
 # Installation
 
@@ -37,11 +27,9 @@ by:
 
      # sudo apt-get install offlineimap msmtp
 
-
-
 # Configuring OfflineImap
 
-Create a \~/.offlineimaprc and configure it based on my file.
+Create a `~/.offlineimaprc` and configure it based on my file.
 Intially, you might want to have the full ui so that you can see
 what is happening. If so, comment out the line
 "ui=Noninteractive.Quiet"
@@ -89,12 +77,10 @@ issues with the maildir path when there are spaces, and other
 special characters in there. You might consider using INBOX or any
 of the maildirs for your seperate GMail labels.
 
-
-
 # Configuring Msmtp
 
 Sup can use msmtp to send messages, instead of the built-in imap
-functionality. Create a \~/.msmtprc and specify names for the
+functionality. Create a `~/.msmtprc` and specify names for the
 accounts. Your configuration file should look something like this:
 
      account personalgmail
@@ -139,7 +125,7 @@ all your emails.
 
 # Configuring Sup to use msmtp
 
-In \~/.sup/config.yaml, to each account, add the line
+In `~/.sup/config.yaml`, to each account, add the line
 
      :sendmail: msmtp --account=personalgmail -t
 
@@ -152,8 +138,6 @@ So finally your account config looks like:
          :name: Your Name
          :sendmail: msmtp --account=personalgmail -t 
 
-
-
 # Switching cold turkey
 
 Unfortunately, any changes you make inside sup, like reading,
@@ -162,6 +146,3 @@ words - the syncing is only one way. While there is some work in
 progress to support two-way syncing, it still currently means that
 the best way to use sup is to leave GMail's web interface from
 regular use.
-
-If you find any problems with this documentation, please email
-anirudh ATT anirudhsanjeev DOTTT org
