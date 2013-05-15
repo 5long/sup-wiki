@@ -1,144 +1,182 @@
-Getting the sup mail client to work with GMail(Imap+Smtp)/Google
-Apps with local mirroring
+Getting the sup mail client to work with GMail/Google Apps (IMAP+SMTP)
+with local mirroring.
 
-# Setup overview:
+## Setup overview:
 
 We'll be using Offlineimap - a tool to mirror IMAP mail in many
 formats - to store our email in the Maildir format. We'll then set
-up msmtp - a package to send email through smtp - to use GMail's
+up msmtp - a package to send email through SMTP - to use GMail's
 system to send messages.
 
-# Installation
+This tutorial is tested on Archlinux as of 2013-05-13. It should work
+suitably well on most other distributions.
 
-This tutorial is tested on Ubuntu 9.10 (Karmic). It should work
-suitably well on most other distributions. Sup installation is done
-through Ruby Gems, as that is the recommended method. First, we
-install the Gems package:
+## Install offlineimap & msmtp
 
-     # sudo apt-get install rubygems
+Sup doesn't transfer mail in or out of your machine. You'll need to
+install these packages:
 
-Now install the "sup" gem:
+```sh
+$ pacman -S offlineimap msmtp sqlite
+```
 
-     # sudo gem install sup
-
-This should take a while but complete successfully.
-We also need two other packages - offlineimap and msmtp, installed
-by:
-
-     # sudo apt-get install offlineimap msmtp
-
-# Configuring OfflineImap
-
-Create a `~/.offlineimaprc` and configure it based on my file.
-Intially, you might want to have the full ui so that you can see
-what is happening. If so, comment out the line
-"ui=Noninteractive.Quiet"
-
-     [general]
-     metadata = ~/.offlineimap
-     accounts = Personal, Account2
-     # ui = Noninteractive.Quiet # Enable this for running offlineimap in the background / as a cron job
-     #
-     [Account Personal]
-     autorefresh = 5
-     localrepository = MboxPersonal
-     remoterepository = ImapPersonal
-     #
-     [Account Account2]
-     autorefresh = 10
-     localrepository = MboxAccount2
-     remoterepository = ImapAccount2
-     #
-     [Repository MboxPersonal]
-     type = Maildir
-     localfolders = ~/personal/Mail?/Personal?
-     #
-     [Repository ImapPersonal]
-     type = Gmail
-     remoteuser = user@domain.com
-     remotepass = password
-     #
-     [Repository MboxAccount2]
-     type = Maildir
-     localfolders = ~/personal/Mail?/Account2?
-     #
-     [Repository ImapAccount2]
-     type = Gmail
-     remoteuser = username@domain.com
-     remotepass = password
-
-Run offlineimap to download all of your messages. It should take a
-few minutes to complete.
-
-Now navigate to the path where your mail has been downloaded and
-create a symlink to the folder: "[Gmail].All Mail" as "target" in
-the same path. The rationale for doing this is because sup has some
-issues with the maildir path when there are spaces, and other
-special characters in there. You might consider using INBOX or any
-of the maildirs for your seperate GMail labels.
-
-# Configuring Msmtp
-
-Sup can use msmtp to send messages, instead of the built-in imap
-functionality. Create a `~/.msmtprc` and specify names for the
-accounts. Your configuration file should look something like this:
-
-     account personalgmail
-     host smtp.gmail.com
-     from user@domain.com
-     auth on
-     tls on
-     tls_certcheck off
-     user user@domain.com
-     password password
-     port 587
-     account account2
-     host smtp.gmail.com
-     #
-     from andy@ninjagod.com
-     auth on
-     tls on
-     tls_certcheck off
-     user username@domain.com
-     password password
-     port 587
-     #
-     account default : personalgmail
-
-If you don't specify your password in the text file, you will have
-to enter it every time you're sending an email.
+> Note: If you're not familiar with `pacman` command, look [Pacman Rosetta]
+  for the equivalent on your system. But the package names may vary.
 
 
+## Configuring offlineImap
 
-# Configuring Sup
+Create a `~/.offlineimaprc` and configure it based on the following
+annotated minimal config:
 
-Run sup-config and follow the "wizard". When asked to add a source,
-choose "maildir" and enter the complete path to the "target"
-folder. Try to avoid spaces and special characters in the path, as
-the paths will be converted into URI format.
+```ini
+[general]
+accounts = personal
+ui = ttyui
 
-Now run sup-sync, which will sync all your emails and index them.
-Run sup from the console which should show you the default UI with
-all your emails.
+[Account personal]
+localrepository = personal-local
+remoterepository = personal-remote
+status_backend = sqlite
 
+[Repository personal-local]
+type = Maildir
+localfolders = ~/mail/personal
+# Spaces in pathname are bad. Lets use `archive` which is a simple word
+# Besides, we only need `All Mail` folder.
+# Sup would manage mails on its own.
+nametrans = lambda folder: {'archive': '[Gmail]/All Mail',
+                            }.get(folder, folder)
 
+[Repository personal-remote]
+# IMAP with hardcoded GMail config
+type = Gmail
+# The path of ca-certfile might be different on your system.
+sslcacertfile = /etc/ssl/certs/ca-certificates.crt
+# Remember that GMail requires full mail address as username
+remoteuser = user@domain.com 
+remotepass = password
+nametrans = lambda folder: {'[Gmail]/All Mail': 'archive',
+                            }.get(folder, folder)
+folderfilter = lambda folder: folder == '[Gmail]/All Mail'
+# Or, if you have a lot of mail and don't want to wait for a long time before
+# using sup, you can archive all your old mails on Gmail and only sync the
+# inbox with the following line replacing the previous `folderfilter` line:
+# folderfilter = lambda folder: folder == 'INBOX'
+```
 
-# Configuring Sup to use msmtp
+After replacing mail account and password with your own, try running:
 
-In `~/.sup/config.yaml`, to each account, add the line
+```sh
+$ offlineimap
+```
 
-     :sendmail: msmtp --account=personalgmail -t
+Oh, if you haven't installed sup yet, you may do it now by following
+[[Home#Installation]] while leaving offlineimap working hard to download
+all your mails.
+
+Now that you're back, let's continue:
+
+## Configuring msmtp
+
+Create a `~/.msmtprc`, it should look something like this (again, fill in
+your own email account and password):
+
+```
+defaults
+auth on
+tls on
+# Same as sslcacertfile in ~/.offlineimaprc
+tls_trust_file /etc/ssl/certs/ca-certificates.crt
+
+account personal
+host smtp.gmail.com
+user user@domain.com
+# The value of `from` is only used when you're not using sup.
+# But it is necessary if you're testing things out.
+from user@domain.com 
+password password
+port 587
+
+account default : personal
+```
+
+> Note: If you're feeling uncomfortable storing cleartext password on disk,
+  don't worry for now. We'll come back to handle this later.
+
+Besides, you need to run `chmod 600 ~/.msmtprc` to make the file
+only readable to your user.
+
+Now you can test if msmtp works correctly by sending yourself a mail:
+
+```sh
+$ echo Wheee! | msmtp user@domail.com
+```
+
+## Add maildir source to sup
+
+Now you can go read the [[New User Guide]] to get a sense of how sup looks
+like. Keep reading until you hit running `sup-config`, which is a wizard
+to get you started.
+
+In the process of `sup-config`, when asked to add a source,
+choose "maildir" and enter `~/mail/personal/archive`. Or
+`~/mail/personal/INBOX` if you choosed so.
+
+After you're done with `sup-config`, you can start `sup` to see all your
+mails!
+
+## Receiving mails
+
+Create a file at `~/.sup/hooks/before-poll.rb` with the following Ruby
+code:
+
+```ruby
+say "Running offlineimap..."
+system "offlineimap", "-o", "-u", "quiet"
+```
+
+Now sup will launch offlineimap everytime you poll for email.
+Including:
+
+* When sup starts
+* When sup polls by the `poll_interval` config value
+* When you asks sup to poll for mails instantly
+
+## Configuring Sup to use msmtp
+
+In `~/.sup/config.yaml`, for each account, search for `sendmail` and modify
+the lines you've found to make them like this:
+
+```
+:sendmail: msmtp -t --read-envelop-from
+```
 
 So finally your account config looks like:
 
-     :accounts: 
-       :default: 
-         :signature: /home/user/.signature
-         :email: username@domain.com
-         :name: Your Name
-         :sendmail: msmtp --account=personalgmail -t 
+```
+:accounts:
+  :default:
+    :signature: /home/user/.signature
+    :email: username@domain.com
+    :name: Your Name
+    :sendmail: msmtp -t --read-envelop-from
+```
 
-# Switching cold turkey
+Now sup should be able to send mails using msmtp. Press `c` in sup to
+compose a mail to yourself to test it out.
+
+## Further reading
+
+By now you've successfully configured most of offlineimap, msmtp and sup.
+And here're some more to read to make your mailing experience even better:
+
+* Read the full [[New User Guide]]
+* [[Securely store password]]
+* [Run offlineimap outside of sup][external offlineimap]
+* [[More topics on advanced sup usage|Home#Advanced-Usage]]
+
+## Switching cold turkey
 
 Unfortunately, any changes you make inside sup, like reading,
 archiving, deleting, etc, will not be reflected in GMail. In other
@@ -146,3 +184,7 @@ words - the syncing is only one way. While there is some work in
 progress to support two-way syncing, it still currently means that
 the best way to use sup is to leave GMail's web interface from
 regular use.
+
+[MTA]: http://en.wikipedia.org/wiki/Message_transfer_agent
+[external offlineimap]: https://wiki.archlinux.org/index.php/Offlineimap#Running_offlineimap_in_the_background
+[Pacman Rosetta]: https://wiki.archlinux.org/index.php/Pacman_Rosetta
